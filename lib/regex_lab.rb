@@ -17,7 +17,7 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text) 
    five_words = []
   five_words << text.scan(/\b\w\W\b/)
-  five_words.is_empty?
+  five_words.empty?
 end
 
 def valid_phone_number?(phone)
