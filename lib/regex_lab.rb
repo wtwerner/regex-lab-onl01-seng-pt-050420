@@ -18,9 +18,9 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
    five_words = []
   five_words << text.scan(/\b\w\W\b/)
   if five_words.empty?
-    false
-  else
     true
+  else
+    false
   end
 end
 
