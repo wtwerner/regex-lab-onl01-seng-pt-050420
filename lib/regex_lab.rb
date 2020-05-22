@@ -15,13 +15,7 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text) 
-   five_words = []
-  five_words << text.scan(/\b\w\W\b/)
-  if five_words.empty?
-    true
-  else
-    false
-  end
+   text.first.match(/)
 end
 
 def valid_phone_number?(phone)
